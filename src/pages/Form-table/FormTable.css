@@ -1,0 +1,9 @@
+/* استايلات الـ FormTable */
+.formtable-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* يمكنك تعديل هذه الاستايلات بحسب تفضيلاتك */
+  

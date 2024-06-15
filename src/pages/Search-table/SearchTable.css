@@ -1,0 +1,57 @@
+/* SearchTable.css */
+
+.searchtable {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.searchtable form {
+  margin-bottom: 20px;
+}
+
+.searchtable input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.searchtable table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.searchtable thead {
+  background-color: #f4f4f4;
+}
+
+.searchtable th, .searchtable td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.searchtable th {
+  font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .searchtable {
+    padding: 10px;
+  }
+
+  .searchtable th, .searchtable td {
+    padding: 8px;
+  }
+
+  .searchtable input[type="text"] {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

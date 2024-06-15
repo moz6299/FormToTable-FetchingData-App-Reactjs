@@ -1,0 +1,97 @@
+.tablecomp {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Allow horizontal scrolling when necessary */
+  }
+  
+  .tablecomp table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    table-layout: fixed; /* Fix table layout to avoid content shifting */
+  }
+  
+  .tablecomp th,
+  .tablecomp td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tablecomp th {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .tablecomp td {
+    background-color: #ffffff;
+  }
+  
+  .tablecomp button {
+    padding: 8px 16px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .tablecomp button.edit {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  .tablecomp button.edit:hover {
+    background-color: #0d8bf2;
+  }
+  
+  .tablecomp button.delete {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .tablecomp button.delete:hover {
+    background-color: #d32f2f;
+  }
+  
+ 
+  
+  @media screen and (max-width: 768px) {
+    .tablecomp {
+      overflow-x: hidden; 
+      overflow-y: auto; 
+      max-width: 100%; 
+    }
+  
+    .tablecomp table {
+      display: block; 
+      width: 100%;
+      overflow-x: auto; 
+      white-space: nowrap; 
+    }
+  
+    .tablecomp th,
+    .tablecomp td {
+      padding: 10px;
+    }
+  
+    .tablecomp button {
+      padding: 6px 12px;
+    }
+  }
+  
+  
+  
+  @media screen and (min-width: 769px) {
+    .tablecomp button {
+      margin-right: 0; 
+    }
+  
+    .tablecomp button.delete {
+      margin-left: 8px; 
+    }
+  }
+  
